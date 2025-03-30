@@ -1,6 +1,6 @@
 # Chen's Group
 
-Welcome to **Chen's Group**, a research laboratory focused on advancing knowledge in [Your Research Field]. Our team is dedicated to innovative research and collaboration.
+Welcome to **Chen's Group**, a research laboratory focused on advancing knowledge in Phys Edu. Our team is dedicated to innovative research and collaboration.
 
 ---
 
