@@ -3,31 +3,36 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #f4f7f6;  /* 淺灰背景色 */
     color: #333;
+    line-height: 1.6;
 }
 
 /* Banner 样式 */
 header {
-    background-color: #4CAF50; /* Banner 顏色 */
-    padding: 50px 0; /* 上下間距 */
+    background-color: #007BFF;  /* 藍色背景 */
+    padding: 80px 0;  /* 上下間距 */
     text-align: center; /* 文字居中 */
     color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* 增加陰影效果 */
 }
 
 .banner h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
+    font-weight: bold;
 }
 
 .banner p {
-    font-size: 1.2em;
-    margin-top: 10px;
+    font-size: 1.5em;
+    margin-top: 15px;
+    font-weight: 300;  /* 更輕的字體 */
 }
 
 /* 導航條 */
 nav {
     background-color: #333;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);  /* 增加陰影 */
 }
 
 nav ul {
@@ -39,33 +44,36 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block; /* 改為 inline-block，這樣每個選項都在同一行 */
+    display: inline-block;
     position: relative;
 }
 
 nav ul li a {
     display: block;
     color: white;
-    padding: 14px 20px;
+    padding: 15px 25px;
     text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #0056b3;  /* 藍色深色調 */
+    color: white;
 }
 
 /* 下拉選單樣式 */
 .dropdown-content {
-    display: none; /* 默認隱藏 */
+    display: none;
     position: absolute;
     background-color: #333;
     min-width: 160px;
     z-index: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-content li {
-    display: block; /* 確保子項顯示在一行 */
+    display: block;
 }
 
 .dropdown-content a {
@@ -75,23 +83,86 @@ nav ul li a:hover {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #0056b3;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block; /* 懸停顯示下拉選單 */
+    display: block;
 }
 
 /* 內容區域 */
 section {
-    padding: 20px;
-    margin: 10px;
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 1200px;  /* 限制最大寬度 */
+    background-color: #ffffff;
+    border-radius: 8px;  /* 圓角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+section h2 {
+    font-size: 2.5em;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* 列表樣式 */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 8px 0;
+    font-size: 1.1em;
+}
+
+ul li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 底部 */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px 0;
+    margin-top: 50px;
+    font-size: 1.1em;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 2.2em;
+    }
+
+    .banner p {
+        font-size: 1.3em;
+    }
+
+    section {
+        padding: 20px;
+    }
 }
